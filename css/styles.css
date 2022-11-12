@@ -80,6 +80,15 @@ ul {
     outline: 2px solid tomato;
 }
 
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.section.work {
+    padding-top: 0;
+}
+
 /* Header */
 
 .header-logo,
