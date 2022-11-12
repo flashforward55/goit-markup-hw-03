@@ -24,17 +24,25 @@ body {
     line-height: 1.14;
 }
 
+/* убираем точки списков */
+
 .list {
     list-style: none;
 }
+
+/* убираем подчеркивание ссылок */
 
 .link {
     text-decoration: none;
 }
 
+/* делаем активную страницу */
+
 .nav-link.link.current {
     color: var(--accent-color);
 }
+
+/* скрываем заголовки h1 и h2 */
 
 .visually-hidden {
     position: absolute;
@@ -47,6 +55,20 @@ body {
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
     margin: -1px;
+}
+
+/* глобальный сброс margin, padding */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
+    padding: 0;
 }
 
 /* Header */
