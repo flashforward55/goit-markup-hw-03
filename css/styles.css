@@ -38,7 +38,7 @@ body {
 
 /* делаем активную страницу */
 
-.nav-link.link.current {
+.header-nav-link.link.current {
     color: var(--accent-color);
 }
 
@@ -91,6 +91,44 @@ ul {
 
 /* Header */
 
+.header {
+    border-bottom: 1px solid var(--header-line-color);
+}
+
+.container.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav-items {
+    display: flex;
+    margin-left: 93px;
+}
+
+.header-nav-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.header-nav-link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.heder-contact-items.list {
+    display: flex;
+    margin-left: auto;
+}
+
+.heder-contact-items .header-contact-item+.header-contact-item {
+    margin-left: 50px;
+}
+
 .header-logo,
 .footer-logo {
     font-family: var(--secondary-font);
@@ -98,13 +136,15 @@ ul {
     font-size: 26px;
     line-height: 1.2;
     color: var(--accent-color);
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
 
 .header-logo-text {
     color: var(--secondary-black-color);
 }
 
-.nav-item .nav-link {
+.header-nav-item .header-nav-link {
     font-weight: 500;
     letter-spacing: 0.02em;
     color: inherit;
@@ -116,10 +156,12 @@ ul {
     color: var(--accent-color);
 }
 
-.contact-link {
+.header-contact-link {
     font-weight: 500;
     letter-spacing: 0.02em;
     color: var(--secondary-text-color);
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 /* Section hero */
