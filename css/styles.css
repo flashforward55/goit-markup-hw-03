@@ -320,10 +320,6 @@ img {
 
 /* Footer */
 
-.footer * {
-    outline: 1px solid red;
-}
-
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
