@@ -71,6 +71,8 @@ ul {
     padding: 0;
 }
 
+/* общий класс .container для центрирования и ограничения контента по ширине. */
+
 .container {
     max-width: 1200px;
     padding-left: 15px;
@@ -167,12 +169,19 @@ ul {
 /* Section hero */
 
 .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
     text-align: center;
     background-color: var(--footer-bg-color);
     color: var(--primary-white-color);
 }
 
 .hero-title {
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 696px;
+
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -181,11 +190,18 @@ ul {
 }
 
 .hero-btn {
+    display: inline-block;
     font-family: inherit;
     border-radius: 4px;
     cursor: pointer;
     background-color: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    min-width: 216px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: transparentscills-items;
 }
 
 .hero-btn:hover,
@@ -202,9 +218,18 @@ ul {
     line-height: 1.88;
     letter-spacing: 0.06em;
     color: var(--primary-white-color);
+
 }
 
 /* Section scills */
+
+.scills-items {
+    display: flex;
+}
+
+.scills-item:not(:last-child) {
+    margin-right: 30px;
+}
 
 .scills-subtitle {
     font-weight: 700;
