@@ -286,10 +286,6 @@ a {
 
 /* -------------------------Section team------------------------------- */
 
-.team-image {
-    margin-bottom: var(--card-set-gap);
-}
-
 .team {
     background-color: var(--secondary-bg-color);
 }
@@ -299,21 +295,23 @@ a {
     margin-left: var(--card-set-gap);
 }
 
-.team-subtitle,
-.team-text {
-    font-size: 16px;
-    line-height: 1.19;
+.team-content {
+    padding-top: var(--card-set-gap);
+    padding-bottom: var(--card-set-gap);
     text-align: center;
+    line-height: 1.19;
+
 }
 
 .team-subtitle {
     font-weight: 500;
     margin-bottom: 10px;
+    font-size: 16px;
 }
 
 .team-text {
     color: var(--secondary-text-color);
-    margin-bottom: var(--card-set-gap);
+    font-size: 16px;
 }
 
 .team-item {
