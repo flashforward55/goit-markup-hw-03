@@ -241,14 +241,12 @@ a {
 
 .scills-items {
     display: flex;
-    margin-left: calc(-1 * var(--card-set-gap));
+    gap: var(--card-set-gap);
 }
 
 .scills-item {
-    flex-basis: calc(100% / 4 - var(--card-set-gap));
-    margin-left: var(--card-set-gap);
+    flex-basis: calc((100% - 3 * var(--card-set-gap)) / 4);
 }
-
 
 .scills-subtitle {
     margin-bottom: 10px;
@@ -408,8 +406,9 @@ a {
 /* ---------------------------cards-------------------------- */
 .card-content {
     padding: 20px 24px;
-    border: 1px solid var(--bottom-border-card);
-
+    border-right: 1px solid var(--bottom-border-card);
+    border-bottom: 1px solid var(--bottom-border-card);
+    border-left: 1px solid var(--bottom-border-card);
 }
 
 .cards-items {
